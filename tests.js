@@ -1,6 +1,5 @@
-// wypelnianie tabeli elementami 0-10
-var table = [];
-for(i=0; i<=10; i++){
-    table.push(i);
+var array = [];
+for (var i=0; i<10; i++) {
+    array.push(i);
+    console.log(array);
 }
-console.log(table);
