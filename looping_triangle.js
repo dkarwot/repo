@@ -1,5 +1,5 @@
 var hash = "#";
-for (var i=0; i<7; i++) {
+for (var i=0; hash.length<=7; i++) {
     console.log(hash);
     hash += "#";
 }
