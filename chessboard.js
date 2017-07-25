@@ -1,4 +1,9 @@
 var size = 8;
-for (i=0; i<size; i++) {
-    console.log(" ")
+var line = 1;
+for(i=0; i<8; i++) {
+    if(line % 2 == 0) {
+        console.log(" # # # #");
+    }
+    else (console.log("# # # # "));
+    line+=1;
 }
