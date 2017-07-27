@@ -1,9 +1,9 @@
 "use strict";
-function countBs(string){
+function countChar(string, letter){
     var counter = 0;
         for(var i=0; i<string.length; i++){
-            if (string[i] == "B") 
+            if (string[i] == letter) 
             counter += 1};
         return counter;
 }
-console.log(countBs("BBC"));
+console.log(countChar("amiga", "a"));
