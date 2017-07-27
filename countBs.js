@@ -5,4 +5,4 @@ function countBs(string){
             counter += 1};
         return counter;
 }
-console.log(countBs("BsB"));
+console.log(countBs("BBC"));
