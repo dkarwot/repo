@@ -1,12 +1,14 @@
 "use strict";
-function range(start, end){
+function range(start, end, step){
     let array = [];
-    for(let i=start; i<=end; i++){
+    if (step === undefined)
+        step = 1;
+    for(let i=start; i<=end; i+=step){
         array.push(i);
     };
     return array;
 };
-console.log(range(1, 10));
+console.log(range(1, 10, 2));
 function sum(array){
     let sum2 = 0;
     let len = array.length;
