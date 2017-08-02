@@ -3,9 +3,10 @@ function range(start, end, step){
     let array = [];
     if (step === undefined)
         step = 1;
-    if (start < end)
+    if (start < end) {
         for(let i=start; i<=end; i+=step){
             array.push(i);
+            }
         }
     else {
         for(let i=start; i>=end; i+=step){
