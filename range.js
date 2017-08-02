@@ -3,12 +3,16 @@ function range(start, end, step){
     let array = [];
     if (step === undefined)
         step = 1;
-    for(let i=start; i<=end; i+=step){
+    if (start < end)
+        for(let i=start; i<=end; i+=step){
+            array.push(i);
+        };
+        for(let i=start; i>=end; i+=step){
         array.push(i);
     };
     return array;
 };
-console.log(range(1, 10, 2));
+console.log(range(10, 1, -1));
 function sum(array){
     let sum2 = 0;
     let len = array.length;
@@ -17,4 +21,4 @@ function sum(array){
     };
     return sum2;
 };
-console.log(sum(range(1, 10)));
+console.log(sum(range(10, 1, -1)));
